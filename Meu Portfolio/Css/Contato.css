@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "Sofia Sans";
+    src: url(https://design.penpot.app/internal/gfonts/font/sofiasans/v16/Yq6E-LCVXSLy9uPBwlAThu1SY8Cx8rlT69BIsJ3qpPM.woff2) format("woff2");
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+    min-width: 100%;
+    padding: 0;
+    font-family: "Sofia Sans", sofia-pro, sans-serif;
+    background-color: #0b1f49;
+}
+
+* {
+    box-sizing: border-box;
+    color: black;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    padding: 20px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 50px;
+    color: #ec1c24;
+}
+
+form {
+    border: 3px solid #ec1c24;
+    padding: 20px;
+}
+
+::-webkit-input-placeholder {
+    color: #0b1f49;
+    font-size: 12px;
+}
+
+.form-group {
+    padding: 10px;
+    display: flex;
+}
+
+.form-group label {
+    color: #ec1c24;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.form-group input,
+textarea {
+    box-shadow: 0 0 0 1px #ec1c24;
+    padding: 5px;
+    margin-left: 5px;
+    border: 1px solid #ec1c24;
+}
+
+.form-group-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+
+.form-group-button button {
+    padding: 10px;
+    background-color: #d1da76;
+    border: none;
+    display: flex;
+    color: #0b1f49;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 10%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.form-group-button button:hover {
+    background-color: green;
+    color: #0b1f49;
+    cursor: pointer;
+    border: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#success-message {
+    color: green;
+    font-weight: 700;
+    margin-top: 5px;
+    text-decoration: underline;
+}
